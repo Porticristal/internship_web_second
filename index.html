@@ -1,0 +1,77 @@
+label as <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ShopBox Dashboard</title>
+  <link rel="stylesheet" href="dashboard.css" />
+</head>
+<body>
+  <div class="container">
+
+    <aside class="sidebar">
+      <h2>ShopBox</h2>
+      <nav>
+        <ul>
+          <li>Dashboard</li>
+          <li>Admin</li>
+          <li>Miami</li>
+          <li>Customer Services</li>
+          <li>Finance</li>
+          <li>Airport Operations</li>
+          <li>Operations</li>
+          <li>Customs</li>
+          <li>Courier</li>
+          <li>Administration</li>
+          <li>Dark Theme</li>
+          <li class="logout">Logout</li>
+        </ul>
+      </nav>
+    </aside>
+
+    <main class="main-content">
+      <header>
+        <div class="search-group">
+          <input type="text" placeholder="Customer" />
+          <input type="text" placeholder="Package" />
+          <input type="text" placeholder="Invoice" />
+          <input type="text" placeholder="Shipment" />
+        </div>
+        <div class="user-info">
+          <p><strong>test test</strong> — Castries Office</p>
+        </div>
+      </header>
+
+      <section class="quote">
+        <em>“Do good and good will follow you!”</em>
+      </section>
+
+      <section class="cards">
+        <div class="card">New Clients to Process: <strong>0</strong></div>
+        <div class="card">Birthdays Today: <strong>0</strong></div>
+        <div class="card">Delivery Request: <strong>9</strong></div>
+        <div class="card">Miami PreAlerts: <strong>55</strong></div>
+      </section>
+
+      <section class="estimator">
+        <h2>Inbound Shipping Estimator</h2>
+        <form>
+          <label>Item Category</label>
+          <input type="text" placeholder="e.g., Electronics" />
+
+          <label>Total Weight (lbs)</label>
+          <input type="number" placeholder="Enter weight" />
+
+          <label>Total Value (US$)</label>
+          <input type="number" placeholder="Enter value" />
+
+          <div class="buttons">
+            <button type="submit">Calculate</button>
+            <button type="reset">Clear</button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+  </div>
+</body>
