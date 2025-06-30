@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ShopBox Dashboard</title>
   <link rel="stylesheet" href="styles.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
@@ -14,18 +14,18 @@
       <h2>ShopBox</h2>
       <nav>
         <ul>
-          <li>Dashboard</li>
-          <li>Admin</li>
-          <li>Miami</li>
-          <li>Customer Services</li>
-          <li>Finance</li>
-          <li>Airport Operations</li>
-          <li>Operations</li>
-          <li>Customs</li>
-          <li>Courier</li>
-          <li>Administration</li>
-          <li>Dark Theme</li>
-          <li class="logout">Logout</li>
+          <li><i class="fas fa-chart-line"></i> Dashboard</li>
+          <li><i class="fas fa-user-shield"></i> Admin</li>
+          <li><i class="fas fa-warehouse"></i> Miami</li>
+          <li><i class="fas fa-headset"></i> Customer Services</li>
+          <li><i class="fas fa-dollar-sign"></i> Finance</li>
+          <li><i class="fas fa-plane-departure"></i> Airport Operations</li>
+          <li><i class="fas fa-cogs"></i> Operations</li>
+          <li><i class="fas fa-shield-alt"></i> Customs</li>
+          <li><i class="fas fa-truck"></i> Courier</li>
+          <li><i class="fas fa-tools"></i> Administration</li>
+          <li><i class="fas fa-moon"></i> Dark Theme</li>
+          <li class="logout"><i class="fas fa-sign-out-alt"></i> Logout</li>
         </ul>
       </nav>
     </aside>
@@ -63,31 +63,34 @@
         <em>“Do good and good will follow you!”</em>
       </section>
 
-      <section class="cards">
-        <div class="card">New Clients to Process: <strong>0</strong></div>
-        <div class="card">Birthdays Today: <strong>0</strong></div>
-        <div class="card">Delivery Request: <strong>9</strong></div>
-        <div class="card">Miami PreAlerts: <strong>55</strong></div>
+      <section class="estimator-cards">
+        <div class="estimator">
+          <h2>Inbound Shipping Estimator</h2>
+          <form>
+            <label>Item Category</label>
+            <input type="text" placeholder="e.g., Electronics" />
+
+            <label>Total Weight (lbs)</label>
+            <input type="number" placeholder="Enter weight" />
+
+            <label>Total Value (US$)</label>
+            <input type="number" placeholder="Enter value" />
+
+            <div class="buttons">
+              <button type="submit">Calculate</button>
+              <button type="reset">Clear</button>
+            </div>
+          </form>
+        </div>
+
+        <div class="cards">
+          <div class="card">New Clients to Process: <strong>0</strong></div>
+          <div class="card">Birthdays Today: <strong>0</strong></div>
+          <div class="card">Delivery Requests: <strong>9</strong></div>
+          <div class="card">Miami Pre-Alerts: <strong>55</strong></div>
+        </div>
       </section>
 
-      <section class="estimator">
-        <h2>Inbound Shipping Estimator</h2>
-        <form>
-          <label>Item Category</label>
-          <input type="text" placeholder="e.g., Electronics" />
-
-          <label>Total Weight (lbs)</label>
-          <input type="number" placeholder="Enter weight" />
-
-          <label>Total Value (US$)</label>
-          <input type="number" placeholder="Enter value" />
-
-          <div class="buttons">
-            <button type="submit">Calculate</button>
-            <button type="reset">Clear</button>
-          </div>
-        </form>
-      </section>
     </main>
 
   </div>
