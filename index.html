@@ -31,32 +31,41 @@
     </aside>
 
     <main class="main-content">
-      <h1 class="dashboard-title">Dashboard</h1>
 
-      <header>
-        <div class="search-group">
-          <input type="text" placeholder="Search Customer" />
+      <header class="dashboard-header">
+        <h1 class="dashboard-title">Dashboard</h1>
 
-          <div class="search-wrapper">
-            <input type="text" placeholder="Search Package" />
-            <i class="fas fa-search"></i>
+        <div class="dashboard-actions">
+          <div class="user-info">
+            <p><strong>test test</strong> — Castries Office</p>
           </div>
-
-          <div class="search-wrapper">
-            <input type="text" placeholder="Search Invoice" />
-            <i class="fas fa-search"></i>
+          <div class="icon-group">
+            <i class="fas fa-bell"></i>
+            <i class="fas fa-flag-usa"></i>
+            <span class="lang-label">English</span>
+            <i class="fas fa-user-circle"></i>
           </div>
-
-          <div class="search-wrapper">
-            <input type="text" placeholder="Search Shipment" />
-            <i class="fas fa-search"></i>
-          </div>
-        </div>
-
-        <div class="user-info">
-          <p><strong>test test</strong> — Castries Office</p>
         </div>
       </header>
+
+      <section class="search-group">
+        <input type="text" placeholder="Search Customer" />
+
+        <div class="search-wrapper">
+          <input type="text" placeholder="Search Package" />
+          <i class="fas fa-search"></i>
+        </div>
+
+        <div class="search-wrapper">
+          <input type="text" placeholder="Search Invoice" />
+          <i class="fas fa-search"></i>
+        </div>
+
+        <div class="search-wrapper">
+          <input type="text" placeholder="Search Shipment" />
+          <i class="fas fa-search"></i>
+        </div>
+      </section>
 
       <section class="quote">
         <p class="quote-heading">THOUGHT FOR THE DAY</p>
@@ -67,27 +76,67 @@
         <div class="estimator">
           <h2>Inbound Shipping Estimator</h2>
           <form>
-            <label>Item Category</label>
-            <input type="text" placeholder="e.g., Electronics" />
+            <div class="row">
+              <div class="form-group">
+                <label>Item Category</label>
+                <select>
+                  <option>Choose a Category</option>
+                </select>
+              </div>
 
-            <label>Total Weight (lbs)</label>
-            <input type="number" placeholder="Enter weight" />
+              <div class="form-group">
+                <label>Total Weight (lbs)</label>
+                <input type="number" value="0.00" step="0.01" />
+              </div>
+            </div>
 
-            <label>Total Value (US$)</label>
-            <input type="number" placeholder="Enter value" />
+            <div class="row">
+              <div class="form-group full-width">
+                <label>Total Value (US$)</label>
+                <input type="number" value="0.00" step="0.01" />
+              </div>
 
-            <div class="buttons">
-              <button type="submit">Calculate</button>
-              <button type="reset">Clear</button>
+              <div class="form-group buttons">
+                <button type="submit">Calculate</button>
+                <button type="reset">Clear</button>
+              </div>
             </div>
           </form>
+          <p class="cif-note">Charges are calculated on CIF Cost, Insurance and Freight</p>
         </div>
 
         <div class="cards">
-          <div class="card">New Clients to Process: <strong>0</strong></div>
-          <div class="card">Birthdays Today: <strong>0</strong></div>
-          <div class="card">Delivery Requests: <strong>9</strong></div>
-          <div class="card">Miami Pre-Alerts: <strong>55</strong></div>
+          <div class="card">
+            <i class="fas fa-user-plus card-icon"></i>
+            <div class="card-content">
+              <p>New Clients to Process</p>
+              <strong>0</strong>
+            </div>
+          </div>
+
+          <div class="card">
+            <i class="fas fa-birthday-cake card-icon"></i>
+            <div class="card-content">
+              <p>Birthdays Today</p>
+              <strong>0</strong>
+            </div>
+          </div>
+
+          <div class="card">
+            <i class="fas fa-box-open card-icon"></i>
+            <div class="card-content">
+              <p>Delivery Requests</p>
+              <strong>9</strong>
+            </div>
+          </div>
+
+          <div class="card">
+            <i class="fas fa-plane card-icon"></i>
+            <div class="card-content">
+              <p>Miami Pre-Alerts</p>
+              <strong>55</strong>
+            </div>
+          </div>
         </div>
       </section>
 
