@@ -9,6 +9,13 @@ body {
   height: 100vh;
 }
 
+.section-box {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+}
+
 /* Sidebar */
 .sidebar {
   width: 240px;
@@ -17,17 +24,14 @@ body {
   padding: 20px;
   border-right: 1px solid #e0e0e0;
 }
-
 .sidebar h2 {
   margin-bottom: 30px;
   color: #6c63ff;
 }
-
 .sidebar ul {
   list-style: none;
   padding: 0;
 }
-
 .sidebar li {
   margin: 15px 0;
   cursor: pointer;
@@ -39,28 +43,24 @@ body {
   gap: 10px;
   font-size: 15px;
 }
-
 .sidebar li i {
   width: 20px;
   text-align: center;
   color: #6c63ff;
 }
-
 .sidebar li:hover {
   background-color: #f1f1f1;
 }
-
 .sidebar li.logout {
   margin-top: 40px;
   color: #d9534f;
 }
 
-/* Main */
+/* Header */
 .main-content {
   flex-grow: 1;
   padding: 20px 30px;
 }
-
 .dashboard-header {
   display: flex;
   justify-content: space-between;
@@ -68,20 +68,17 @@ body {
   flex-wrap: wrap;
   margin-bottom: 20px;
 }
-
 .dashboard-title {
   font-size: 28px;
   font-weight: bold;
   color: #6c63ff;
   margin: 10px 0;
 }
-
 .dashboard-actions {
   display: flex;
   align-items: center;
   gap: 20px;
 }
-
 .icon-group {
   display: flex;
   align-items: center;
@@ -89,12 +86,10 @@ body {
   font-size: 18px;
   color: #4a4a4a;
 }
-
 .lang-label {
   font-size: 14px;
   color: #4a4a4a;
 }
-
 .user-info {
   font-size: 14px;
   color: #555;
@@ -107,31 +102,22 @@ body {
   gap: 10px;
   align-items: center;
 }
-
 .search-group.section-box {
   padding: 20px;
   margin-bottom: 20px;
-  border: 1px solid #e0e0e0;
-  border-radius: 8px;
-  background-color: #fff;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
 }
-
 .search-group input {
   padding: 8px;
   width: 180px;
   border: 1px solid #ccc;
   border-radius: 6px;
 }
-
 .search-wrapper {
   position: relative;
 }
-
 .search-wrapper input {
   padding-right: 30px;
 }
-
 .search-wrapper i {
   position: absolute;
   right: 10px;
@@ -141,11 +127,10 @@ body {
   pointer-events: none;
 }
 
-/* Quote */
+/* Thought for the Day */
 .quote {
   margin: 20px 0;
 }
-
 .quote-heading {
   font-weight: bold;
   color: #6c63ff;
@@ -154,7 +139,6 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.5px;
 }
-
 .quote em {
   color: #333;
   font-style: italic;
@@ -162,7 +146,4 @@ body {
 
 /* Estimator + Cards */
 .estimator-cards {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
- 
+  display:
