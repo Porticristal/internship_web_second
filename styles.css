@@ -1,120 +1,149 @@
-.estimator-cards {
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f6f8;
+}
+
+.container {
   display: flex;
-  gap: 20px;
-  align-items: flex-start;
-  margin-bottom: 30px;
+  height: 100vh;
 }
 
-/* Estimator */
-.estimator.section-box {
-  flex: 2;
-  padding: 25px;
-  max-width: 500px;
+.section-box {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
 }
 
-.estimator h2 {
-  margin-bottom: 20px;
-  font-size: 20px;
+/* Sidebar */
+.sidebar {
+  width: 240px;
+  background-color: #ffffff;
   color: #333;
-}
-
-.row {
-  display: flex;
-  gap: 20px;
-  margin-bottom: 15px;
-}
-
-.bottom-row {
-  align-items: flex-end;
-}
-
-.form-group {
-  flex: 1;
-  min-width: 180px;
-}
-
-.form-group.full-width {
-  flex: 2;
-}
-
-.form-group label {
-  display: block;
-  margin-bottom: 5px;
-  font-weight: 500;
-  font-size: 14px;
-  color: #555;
-}
-
-.form-group input,
-.form-group select {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #bbb;
-  border-radius: 6px;
-  font-size: 14px;
-}
-
-.form-group.buttons {
-  display: flex;
-  gap: 10px;
-}
-
-.form-group.buttons button {
-  padding: 10px 16px;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  font-size: 14px;
-}
-
-.form-group.buttons button[type="submit"] {
-  background-color: #007bff;
-  color: #fff;
-}
-
-.form-group.buttons button[type="reset"] {
-  background-color: #dee2e6;
-  color: #333;
-}
-
-.cif-note {
-  margin-top: 15px;
-  font-size: 13px;
-  color: #555;
-  font-style: italic;
-}
-
-/* Cards stacked vertically beside estimator */
-.cards-container {
-  flex: 1;
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 15px;
-  min-width: 220px;
-}
-
-/* Individual card styling */
-.card.section-box {
   padding: 20px;
+  border-right: 1px solid #e0e0e0;
+}
+.sidebar h2 {
+  margin-bottom: 30px;
+  color: #6c63ff;
+}
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+.sidebar li {
+  margin: 15px 0;
+  cursor: pointer;
+  padding: 8px 10px;
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 15px;
+}
+.sidebar li i {
+  width: 20px;
+  text-align: center;
+  color: #6c63ff;
+}
+.sidebar li:hover {
+  background-color: #f1f1f1;
+}
+.sidebar li.logout {
+  margin-top: 40px;
+  color: #d9534f;
+}
+
+/* Header */
+.main-content {
+  flex-grow: 1;
+  padding: 20px 30px;
+}
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+.dashboard-title {
+  font-size: 28px;
+  font-weight: bold;
+  color: #6c63ff;
+  margin: 10px 0;
+}
+.dashboard-actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.icon-group {
   display: flex;
   align-items: center;
   gap: 15px;
-  min-height: 100px;
+  font-size: 18px;
+  color: #4a4a4a;
 }
-
-.card-icon {
-  font-size: 28px;
-  color: #6c63ff;
-  flex-shrink: 0;
+.lang-label {
+  font-size: 14px;
+  color: #4a4a4a;
 }
-
-.card-content p {
-  margin: 0;
+.user-info {
   font-size: 14px;
   color: #555;
 }
 
-.card-content strong {
-  font-size: 20px;
-  color: #333;
+/* Search */
+.search-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
 }
+.search-group.section-box {
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.search-group input {
+  padding: 8px;
+  width: 180px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+.search-wrapper {
+  position: relative;
+}
+.search-wrapper input {
+  padding-right: 30px;
+}
+.search-wrapper i {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #888;
+  pointer-events: none;
+}
+
+/* Thought for the Day */
+.quote {
+  margin: 20px 0;
+}
+.quote-heading {
+  font-weight: bold;
+  color: #6c63ff;
+  margin-bottom: 5px;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+.quote em {
+  color: #333;
+  font-style: italic;
+}
+
+/* Estimator + Cards */
+.estimator-cards {
+  display:
